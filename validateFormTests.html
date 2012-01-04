@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Form Validation Unit Test</title>
+
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	    <script type="text/javascript" src="validate-form.js"></script>
+	
+	    <link rel="stylesheet" href="../qunit/qunit.css" type="text/css"/>
+	    <script type="text/javascript" src="../qunit/qunit.js"></script>
+	
+	    <script type="text/javascript" src="form-validator.jquery.js"></script>
+
+	</head>
+	<body>
+        <h1 id="qunit-header">Form Validation Test Suite</h1>
+        <h2 id="qunit-banner"></h2>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests">
+		</ol>
+		<div id="test-html">
+	        <form name="test-required" id="test-required" action="#">
+	            <h5 class="heading">Required</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text required">
+	                    <label for="required" class="form-label">Required:</label>
+	                    <input type="text" id="required" class="text">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-required">
+	                </li>                                                                                                              
+	            </ol>
+	        </form>
+	        <form name="test-text" id="test-text" action="#">
+	            <h5 class="heading">Text</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="text" class="form-label">Text:</label>
+	                    <input type="text" id="text" class="text">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-text">
+	                </li>                                                                                                              
+	            </ol>
+	        </form>
+	        <form name="test-number" id="test-number" action="#">
+	            <h5 class="heading">Number</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="number" class="form-label">Number:</label>
+	                    <input type="text" id="number" class="number">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-number">
+	                </li>                                                                                                              
+	            </ol>
+	        </form> 
+	        <form name="test-date" id="test-date" action="#">
+	            <h5 class="heading">Date</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="date" class="form-label">Date:</label>
+	                    <input type="text" id="date" class="date">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-date">
+	                </li>                                                                                                              
+	            </ol>
+	        </form> 
+	        <form name="test-time" id="test-time" action="#">
+	            <h5 class="heading">Time</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="time" class="form-label">Time:</label>
+	                    <input type="text" id="time" class="time">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-time">
+	                </li>                                                                                                              
+	            </ol>
+	        </form> 
+	        <form name="test-email" id="test-email" action="#">
+	            <h5 class="heading">Email</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="email" class="form-label">Email:</label>
+	                    <input type="text" id="email" class="email">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-email">
+	                </li>                                                                                                              
+	            </ol>
+	        </form> 
+	        <form name="test-postcode" id="test-postcode" action="#">
+	            <h5 class="heading">Postcode</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-text">
+	                    <label for="postcode" class="form-label">Postcode:</label>
+	                    <input type="text" id="postcode" class="postcode">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-postcode">
+	                </li>                                                                                                              
+	            </ol>
+	        </form> 		
+			<form name="test-cc-number" id="test-cc-number" action="nothing.html">
+	            <h5 class="heading">Credit Card Number</h5>
+		        <ol class="form-controls-collection">
+		            <li class="form-input-number">
+		                <label for="cc-num1" class="form-label">Card Number:</label>
+		                <input type="text" id="cc-num1" class="credit-card cc-number">
+		            </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-ccnum">
+	                </li>				                                                                                               
+		        </ol>
+			</form>
+	        <form name="test-cc-ccv" id="test-cc-ccv" action="#">
+	            <h5 class="heading">Credit Card CCV</h5>
+	            <ol class="form-controls-collection">
+	                <li class="form-input-number">
+	                    <label for="cc-ccv1" class="form-label">CCV:</label>
+	                    <input type="text" id="cc-ccv1" class="credit-card cc-ccv">
+	                </li>
+	                <li class="form-submit">
+	                    <input type="submit" id="submit-cc-ccv">
+	                </li>                                                                                                              
+	            </ol>
+	        </form>
+		</div>			
+	</body>
+</html>
